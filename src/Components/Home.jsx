@@ -12,8 +12,13 @@ const Home = () => {
                   <p>I am Eric</p>
                   <p>A Software Developer</p>
               </h1>
-              <Link to="About">
-                  <button>More Info</button>
+              <Link to="/">
+                  <button className="hire">Hire Me</button>
+                  <a href="#" download="#resume">
+                      <button className="resume">
+                          Get Resume
+                      </button>
+                  </a>
               </Link>
             </div>
             <div className="person">

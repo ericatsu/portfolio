@@ -39,6 +39,8 @@
     padding: auto;
 }
 
+
+
 @media (min-width: 800px) {
     .home{
         flex-direction: row;
@@ -54,4 +56,6 @@
         width: 100%;
         
     }
+
+    
 }

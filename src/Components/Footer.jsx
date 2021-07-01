@@ -9,13 +9,13 @@ import Facebook from '../assets/facebook.png';
 const Footer = () => {
     return (
         <footer>
-            <a href="#" target="_blank">
+            <a href="https://github.com/ericatsu" target="_blank">
                 <img
                     src={Github}
                     alt="GitHub"
                 />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.youtube.com/channel/UCZvhEk5BETiadTJY4CdxIIQ" target="_blank">
                 <img
                     src={YouTube}
                     alt="YouTube"
@@ -33,7 +33,7 @@ const Footer = () => {
                     alt="LinkIn"
                 />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://twitter.com/ericKAatsu" target="_blank">
                 <img
                     src={Twitter}
                     alt="Twitter"
