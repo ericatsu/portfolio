@@ -7,13 +7,15 @@ import NavBar from './Components/NavBar';
 import Skills from './Components/Skills';
 import Works from './Components/Works'
 import Contact from './Components/Contact'
+import SideBar from './Components/SideBar';
 
 
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
+        <SideBar/>
         <NavBar/>
         <Switch>
           <Route exact path="/" component={Home} />

@@ -1,102 +1,45 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './Styles/NavBar.css';
-import brand from '../assets/brand.png';
+import React from 'react';
+// import { useState, useEffect } from 'react';
+// import { Link as LinkR, useLocation } from 'react-router-dom';
+// import { Link as LinkS } from 'react-scroll';
+import {FaBars} from 'react-icons/fa'
+import { Nav, NavBarContainter, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from '../elements/NavBarElements';
+
 
 
 const NavBar = () => {
-    const [open, setOpen] = useState(false);
-    const [ScreenWidth, setScreenWidth] = useState(0);
-    const location = useLocation();
-
-    const trackScreenWidth = () => {
-        const width = window.innerWidth;
-        setScreenWidth(width);
-        if (width > 800) {
-            setOpen(true)
-        }
-    };
-
-    const handleClose = () => {
-        if (ScreenWidth < 800) {
-            setOpen(false);
-        }
-    };
-
-    useEffect(() => {
-        trackScreenWidth();
-        window.addEventListener("resize", trackScreenWidth);
-        return () => window.removeEventListener("resize", trackScreenWidth)
-    }, []); 
-
-    return (
-        <nav className="navbar">
-            <div className="nav-wrapper">
-                <div className="logo">
-                <Link to="/">
-                    <img
-                      src={brand}
-                      alt="Home"
-                    />
-                </Link>
-            </div>
-            
-            <div className="list-wrapper">
-                <img
-                    src="#my-logo"
-                    alt="Menu bars" style={{ opacity: !open ? 1 : 0}}
-                    onClick={() => {
-                        setOpen(!open);
-                    }}
-                />
-                <img
-                    src="#my-logo"
-                        alt="Menu Cross" style={{ opacity: open ? 1 : 0 }}
-                        onClick={() => {
-                            setOpen(!open);
-                        }}
-                />
-                <ul style={{ left: open ? "0" : "-100vw"}}>
-                    <li>
-                        <Link onClick={handleClose} to="/"
-                        style={{color: location.pathname === "/" && "#4071f4"}}
-                        >
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={handleClose} to="/About"
-                            style={{ color: location.pathname === "/About" && "#4071f4" }}
-                            >
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={handleClose} to="/Skills"
-                            style={{ color: location.pathname === "/Skills" && "#4071f4" }}
-                            >
-                            Skills
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={handleClose} to="/Works"
-                            style={{ color: location.pathname === "/Works" && "#4071f4" }}
-                            >
-                            Works
-                        </Link>
-                    </li>
-                        <li>
-                            <Link onClick={handleClose} to="/Contact"
-                            style={{ color: location.pathname === "/Contact" && "#4071f4" }}
-                            >
-                                Contact
-                            </Link>
-                        </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-    )
+    return(
+     <>
+     <Nav>
+        <NavBarContainter>
+        <NavLogo>lester</NavLogo>
+        <MobileIcon>
+            <FaBars />
+        </MobileIcon>
+        <NavMenu>
+            <NavItem>
+                <NavLinks to="Service">Service</NavLinks>
+            </NavItem>
+            <NavItem>
+                <NavLinks to="Skills">Skills</NavLinks>
+            </NavItem>
+            <NavItem>
+                <NavLinks to="/Contact">Contact</NavLinks>
+            </NavItem>
+            <NavItem>
+                <NavLinks to="Works">Works</NavLinks>
+            </NavItem>
+            <NavItem>
+                <NavLinks to="About">About</NavLinks>
+            </NavItem>
+        </NavMenu>
+         <NavBtn>
+             <NavBtnLink to='/HireMe'>Hire Me</NavBtnLink>
+         </NavBtn>
+        </NavBarContainter>
+     </Nav>
+     </>
+    );
 }
 
 export default NavBar
