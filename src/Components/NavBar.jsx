@@ -7,15 +7,15 @@ import { Nav, NavBarContainter, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks,
 
 
 
-const NavBar = () => {
+const NavBar = ( {toggle} ) => {
     return(
      <>
      <Nav>
         <NavBarContainter>
         <NavLogo>lester</NavLogo>
-        <MobileIcon>
+        <MobileIcon onClick={toggle}>
             <FaBars />
-        </MobileIcon>
+        </MobileIcon >
         <NavMenu>
             <NavItem>
                 <NavLinks to="Service">Service</NavLinks>
