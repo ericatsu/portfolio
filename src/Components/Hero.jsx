@@ -1,8 +1,17 @@
-import React from 'react'
-import { HeroContainer, HeroBg, VideoBg } from '../elements/HeroElements'
+import React, {useState} from 'react'
+import { HeroContainer, HeroBg, VideoBg,
+        HeroContent, HeroBtnWrapper,HeroH1,
+        HeroP, ArrowForward, ArrowRight } from '../elements/HeroElements'
 import Video from '../assets/video.mp4'
+import { Button } from '../elements/ButtonElements'
 
 const Hero = () => {
+    const [hover, sethover] = useState(false)
+    
+    const onHover = () => {
+        sethover(!hover)
+    }
+
     return (
         <HeroContainer>
             <HeroBg>
@@ -14,13 +23,12 @@ const Hero = () => {
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Consequatur quas similique, doloribus architecto voluptates at 
                     sapiente accusantium eius doloremque sit officiis. Dolorem perspiciatis, 
-                    porro officia, reprehenderit, aperiam incidunt eum ex ratione 
-                    distinctio odio labore ipsa repudiandae. Sint veniam nulla, 
-                    nostrum esse laborum asperiores alias commodi perferendis voluptatem. 
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='HireMe'>
-                        Get started {hover ? <ArrowForward/> : <ArrowRight/>}
+                    <Button to='HireMe' onMouseEnter={onHover} onMouseLeave={onHover}
+                     primary='true' dark='true'
+                    >
+                        Hire Me {hover ? <ArrowForward/> : <ArrowRight/>}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>

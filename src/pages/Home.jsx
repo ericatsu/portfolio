@@ -5,6 +5,7 @@ import { Link  as LinkR} from 'react-router-dom'
 // import Hero from '../assets/hero.JPG';
 import SideBar from '../Components/SideBar'
 import NavBar from '../Components/NavBar'
+import Hero from '../Components/Hero';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -18,6 +19,7 @@ const Home = () => {
         <>
         <SideBar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
+        <Hero/>
         </>
     )
 }
