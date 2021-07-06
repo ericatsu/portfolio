@@ -1,12 +1,13 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
-import { Link  as LinkR} from 'react-router-dom'
+import { useState } from 'react';
+//import { Link  as LinkR} from 'react-router-dom'
 // import './Styles/Home.css'
 // import Hero from '../assets/hero.JPG';
 import SideBar from '../Components/SideBar'
 import NavBar from '../Components/NavBar'
 import Hero from '../Components/Hero';
 import About from '../Components/About';
+import { homeObjOne } from '../Components/Data';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +22,7 @@ const Home = () => {
         <SideBar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
         <Hero/>
-        <About/>
+        <About {...homeObjOne}/>
         </>
     )
 }
