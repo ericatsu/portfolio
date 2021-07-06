@@ -1,26 +1,31 @@
-import './Styles/About.css'
+import { Button } from "react-scroll"
+import { InfoContainer, InfoWrapper, InfoRow,
+ Column1, TextWrapper, TopLine, Heading, Subtitle,
+BtnWrap, Column2, ImgWrap, Img } from "../elements/AboutElements"
 
 const About = () => {
     return (
-        <div className="about">
-            <h1>Bio</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quidem, voluptatum. Molestiae quasi praesentium sint numquam perspiciatis, 
-                temporibus delectus autem laudantium fugit et nam 
-                officiis voluptatibus magni vitae eius possimus! Nam!
-            </p>
-            <br />
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit id mollitia, voluptates itaque et quod optio sunt 
-                necessitatibus dolorum eius eaque ratione quisquam consectetur, dignissimos, q
-                uasi ullam doloremque? Perspiciatis, architecto.
-                Quidem, voluptatum. Molestiae quasi praesentium sint numquam perspiciatis,
-                temporibus delectus autem laudantium fugit et nam
-                officiis voluptatibus magni vitae eius possimus! Nam!
-            </p>
-        </div>
+        <InfoContainer>
+            <InfoWrapper>
+                <InfoRow>
+                    <Column1>
+                    <TextWrapper>
+                        <TopLine>TopLine</TopLine>
+                        <Heading>Heading</Heading>
+                        <Subtitle>Subtitle</Subtitle>
+                        <BtnWrap>
+                            <Button to='Home'>Button</Button>
+                        </BtnWrap>
+                    </TextWrapper>
+                    </Column1>
+                    <Column2>
+                      <ImgWrap>
+                      <Img />
+                      </ImgWrap>
+                    </Column2>
+                </InfoRow>
+            </InfoWrapper>
+        </InfoContainer>
     )
 }
 
