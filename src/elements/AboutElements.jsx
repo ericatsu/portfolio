@@ -64,7 +64,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '010606')};
 
    @media screen and (max-width: 480px){
    font-size: 32px;
@@ -81,13 +81,15 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
-`
+`;
+
 export const ImgWrap = styled.div`
   max-width: 555px;
-  height: 100px;
-`
+  height: 100%;
+`;
+
 export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
-`
+`;

@@ -1,5 +1,5 @@
 export const homeObjOne = {
-    id: 'Hero',
+    id: 'About',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -9,7 +9,7 @@ export const homeObjOne = {
     buttonLabel: 'Hire Me',
     imgStart: false,
     img: require('../assets/images/hello.svg'),
-    alt: 'Car',
+    alt: 'hello',
     dark: true,
     primary: true,
     darkText: false
