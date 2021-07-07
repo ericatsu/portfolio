@@ -2,6 +2,7 @@ import { Button } from "../elements/ButtonElements"
 import { InfoContainer, InfoWrapper, InfoRow,
  Column1, TextWrapper, TopLine, Heading, Subtitle,
  BtnWrap, Column2, ImgWrap, Img } from "../elements/AboutElements"
+ import hello from "../assets/images/hello.svg"
 
 const About = ({lightBg, id, imgStart,topLine,lightText, headline,darkText,description,buttonLabel,img, alt, primary, dark, dark2}) => {
     return (
@@ -29,7 +30,7 @@ const About = ({lightBg, id, imgStart,topLine,lightText, headline,darkText,descr
                     </Column1>
                     <Column2>
                       <ImgWrap>
-                      <Img src={img} alt={alt}/>
+                      <Img src={hello} alt={alt}/>
                       </ImgWrap>
                     </Column2>
                 </InfoRow>
