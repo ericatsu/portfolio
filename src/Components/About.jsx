@@ -1,7 +1,7 @@
 import { Button } from "../elements/ButtonElements"
 import { InfoContainer, InfoWrapper, InfoRow,
  Column1, TextWrapper, TopLine, Heading, Subtitle,
-BtnWrap, Column2, ImgWrap, Img } from "../elements/AboutElements"
+ BtnWrap, Column2, ImgWrap, Img } from "../elements/AboutElements"
 
 const About = ({lightBg, id, imgStart,topLine,lightText, headline,darkText,description,buttonLabel,img, alt, primary, dark, dark2}) => {
     return (
