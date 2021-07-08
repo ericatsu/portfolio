@@ -9,6 +9,7 @@ import Hero from '../Components/Hero';
 import About from '../Components/About';
 import Skills from '../Components/Skills';
 import Works from '../Components/Works';
+import Services from '../Components/Services';
 import { homeObjOne, homeObjTwo, homeObjThree } from '../Components/Data';
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
         <Hero/>
         <About {...homeObjOne}/>
         <Skills {...homeObjTwo} />
+        <Services />
         <Works {...homeObjThree} />
         </>
     )
