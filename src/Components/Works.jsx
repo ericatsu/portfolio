@@ -1,39 +1,43 @@
-import './Styles/Works.css'
+import { Button } from "../elements/ButtonElements"
+import {
+    InfoContainer, InfoWrapper, InfoRow,
+    Column1, TextWrapper, TopLine, Heading, Subtitle,
+    BtnWrap, Column2, ImgWrap, Img
+} from "../elements/AboutElements"
+import mobile from "../assets/images/mobile_ux.svg"
 
-const Works = () => {
+const Works = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2 }) => {
     return (
-        <div className="works">
-            <h1>Experiences</h1>
-            <p>Company: Lester Inc</p>
-            <p>Role: Software</p>
-            <p>Date: 2020 - on going</p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Repellat aliquam numquam illum molestias tempora ad ea totam. 
-                Harum porro quis dolores obcaecati deserunt velit optio illum. 
-                Laudantium veniam aliquam deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Odio eos aperiam praesentium ab. Libero consequatur quae deleniti est dolor. 
-                Quos quaerat maiores explicabo excepturi iste illum nostrum rerum earum quam!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Eum odio necessitatibus saepe unde repellendus asperiores excepturi, 
-                tenetur et ducimus quo sed molestias nostrum eos! Commodi cumque odio tenetur aliquid eveniet?
-            </p>
-            <br/>
-            <p>Company: Lester Inc</p>
-            <p>Role: Software</p>
-            <p>Date: 2019 - 2020</p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Repellat aliquam numquam illum molestias tempora ad ea totam.
-                Harum porro quis dolores obcaecati deserunt velit optio illum.
-                Laudantium veniam aliquam deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Odio eos aperiam praesentium ab. Libero consequatur quae deleniti est dolor.
-                Quos quaerat maiores explicabo excepturi iste illum nostrum rerum earum quam!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eum odio necessitatibus saepe unde repellendus asperiores excepturi,
-                tenetur et ducimus quo sed molestias nostrum eos! Commodi cumque odio tenetur aliquid eveniet?
-            </p>
-        </div>
+        <InfoContainer lightBg={lightBg} id={id}>
+            <InfoWrapper>
+                <InfoRow imgStart={imgStart}>
+                    <Column1>
+                        <TextWrapper>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headline}</Heading>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
+                            <BtnWrap>
+                                <Button to='Home'
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                    primary={primary ? 1 : 0}
+                                    dark={dark ? 1 : 0}
+                                    dark2={dark2 ? 1 : 0}
+                                >{buttonLabel}</Button>
+                            </BtnWrap>
+                        </TextWrapper>
+                    </Column1>
+                    <Column2>
+                        <ImgWrap>
+                            <Img src={mobile} alt={alt} />
+                        </ImgWrap>
+                    </Column2>
+                </InfoRow>
+            </InfoWrapper>
+        </InfoContainer>
     )
 }
 
