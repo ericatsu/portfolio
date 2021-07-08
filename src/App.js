@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import HireMe from './Components/HireMe';
+import HireMe from './pages/HireMe';
 import Home from './pages/Home';
 
 

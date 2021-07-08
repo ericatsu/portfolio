@@ -8,38 +8,18 @@ import Facebook from '../assets/facebook.png';
 
 const Footer = () => {
     return (
-        <footer>
-            <a href="https://github.com/ericatsu" target="_blank">
-                <img
-                    src={Github}
-                    alt="GitHub"
-                />
-            </a>
-            <a href="https://www.youtube.com/channel/UCZvhEk5BETiadTJY4CdxIIQ" target="_blank">
-                <img
-                    src={YouTube}
-                    alt="YouTube"
-                />
-            </a>
-            <a href="#" target="_blank">
-                <img
-                    src={Facebook}
-                    alt="Facebook"
-                />
-            </a>
-            <a href="#" target="_blank">
-                <img
-                    src={LinkedIn}
-                    alt="LinkIn"
-                />
-            </a>
-            <a href="https://twitter.com/ericKAatsu" target="_blank">
-                <img
-                    src={Twitter}
-                    alt="Twitter"
-                />
-            </a>
-        </footer>
+        <FooterContainer>
+        <FooterWrap>
+        <Container>
+                    <FooterTitle>Contact</FooterTitle>
+                    <FooterH2>Let's create your next experience together</FooterH2>
+                    <FooterEmail>ekaatsu@st.ug.edu.gh</FooterEmail>
+                    <FooterLInk to="/HireMe">LinkedIn</FooterLInk>
+                    <FooterLInk to="/HireMe">LinkedIn</FooterLInk>
+                    <FooterLInk to="/HireMe">LinkedIn</FooterLInk>
+        </Container>
+        </FooterWrap>
+        </FooterContainer>
     )
 }
 
