@@ -1,8 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-//import { Link  as LinkR} from 'react-router-dom'
-// import './Styles/Home.css'
-// import Hero from '../assets/hero.JPG';
 import SideBar from '../Components/SideBar'
 import NavBar from '../Components/NavBar'
 import Hero from '../Components/Hero';
@@ -28,7 +25,7 @@ const Home = () => {
         <Hero/>
         <About {...homeObjOne}/>
         <Skills {...homeObjTwo} />
-        <Services />
+        <Services/>
         <Works {...homeObjThree} />
         <Footer/>
         </>

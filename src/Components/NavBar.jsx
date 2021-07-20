@@ -1,43 +1,73 @@
-import React from 'react';
-// import { useState, useEffect } from 'react';
-// import { Link as LinkR, useLocation } from 'react-router-dom';
-// import { Link as LinkS } from 'react-scroll';
+import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
 import { Nav, NavBarContainter, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from '../elements/NavBarElements';
-
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll } from 'react-scroll';
 
 
 const NavBar = ( {toggle} ) => {
+
+    const [scrollNav, setscrollNav] = useState(false)
+
+    const changeNav = () => {
+        if(window.scrollY >= 80){
+          setscrollNav(true)
+        } else {
+          setscrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+     window.addEventListener('scroll', changeNav)
+    }, [])
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return(
      <>
-     <Nav>
+    <IconContext.Provider value={{color: '#ffff'}}>
+     <Nav scrollNav={scrollNav}>
         <NavBarContainter>
-        <NavLogo>lester</NavLogo>
+        <NavLogo to="/" onClick={toggleHome}>lester</NavLogo>
         <MobileIcon onClick={toggle}>
             <FaBars />
         </MobileIcon >
         <NavMenu>
             <NavItem>
-                <NavLinks to="Service">Service</NavLinks>
+                <NavLinks to="About" smooth={true}
+                duration={500} spy={true}
+                exact='true' offset={-80}>About</NavLinks>
             </NavItem>
             <NavItem>
-                <NavLinks to="Skills">Skills</NavLinks>
+                <NavLinks to="Skills" smooth={true}
+                duration={500} spy={true}
+                exact='true' offset={-80}>Skills</NavLinks>
             </NavItem>
             <NavItem>
-                <NavLinks to="/Contact">Contact</NavLinks>
+                <NavLinks to="Services" smooth={true}
+                duration={500} spy={true}
+                exact='true' offset={-80}
+                containerId='services'>Service</NavLinks>
             </NavItem>
             <NavItem>
-                <NavLinks to="Works">Works</NavLinks>
+                <NavLinks to="Works" smooth={true}
+                duration={500} spy={true}
+                exact='true' offset={-80}>Works</NavLinks>
             </NavItem>
             <NavItem>
-                <NavLinks to="About">About</NavLinks>
+                <NavLinks to="Contact" smooth={true}
+                duration={500} spy={true}
+                exact='true' offset={-80}>Contact</NavLinks>
             </NavItem>
         </NavMenu>
          <NavBtn>
-             <NavBtnLink to='/HireMe'>Hire Me</NavBtnLink>
+             <NavBtnLink to='HireMe'>Hire Me</NavBtnLink>
          </NavBtn>
         </NavBarContainter>
      </Nav>
+</IconContext.Provider>
      </>
     );
 }

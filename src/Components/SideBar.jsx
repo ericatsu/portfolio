@@ -10,24 +10,24 @@ const SideBar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='Serice' onClick={toggle}>
-                        Service
+                    <SidebarLink to='About' onClick={toggle}>
+                        About
                     </SidebarLink>
-                    <SidebarLink to='skills' onClick={toggle}>
+                    <SidebarLink to='Skills' onClick={toggle}>
                         Skills
                     </SidebarLink>
-                    <SidebarLink to='Contact' onClick={toggle}>
-                        Contact
+                    <SidebarLink to='Services' onClick={toggle}>
+                        Service
                     </SidebarLink>
                     <SidebarLink to='Works' onClick={toggle}>
                         Works
                     </SidebarLink>
-                    <SidebarLink to='About' onClick={toggle}>
-                        About
+                    <SidebarLink to='Contact' onClick={toggle}>
+                        Contact
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/HireMe'>Hire Me</SidebarRoute>
+                    <SidebarRoute to='HireMe'>Hire Me</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

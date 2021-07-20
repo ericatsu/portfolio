@@ -14,25 +14,24 @@ const Services = () => {
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={webdev}/>
-                    <ServicesH2>Our Services</ServicesH2>
-                    <ServicesP>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
-                         voluptatibus.</ServicesP>
+                    <ServicesH2>Web Development</ServicesH2>
+                    <ServicesP>Develop a website for your businesses and organizations.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={appdev} />
-                    <ServicesH2>Our Services</ServicesH2>
-                    <ServicesP>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
-                        voluptatibus.</ServicesP>
+                    <ServicesH2>App Development</ServicesH2>
+                    <ServicesP>We specialize in mobile app design and development to create 
+                        solutions that satisfy your consumers while also helping your company expand.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={cloud} />
-                    <ServicesH2>Our Services</ServicesH2>
+                    <ServicesH2>Cloud Services</ServicesH2>
                     <ServicesP>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
                         voluptatibus.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={other} />
-                    <ServicesH2>Our Services</ServicesH2>
+                    <ServicesH2>Others</ServicesH2>
                     <ServicesP>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
                         voluptatibus.</ServicesP>
                 </ServicesCard>
@@ -41,4 +40,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Services;
