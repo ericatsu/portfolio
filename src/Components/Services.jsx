@@ -9,7 +9,7 @@ import other from '../assets/images/other.svg'
 
 const Services = () => {
     return (
-        <ServicesContainer id="services">
+        <ServicesContainer id="Services">
             <ServicesH1>My Services</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>

@@ -67,7 +67,7 @@ export const Form = styled.form`
 `
 
 export const FormH1 = styled.h1`
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -81,6 +81,12 @@ export const FormLabel = styled.label`
 `
 export const FormInput = styled.input`
   padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+`
+export const FormMessage = styled.input`
+  padding: 30px 10px;
   margin-bottom: 32px;
   border: none;
   border-radius: 4px;

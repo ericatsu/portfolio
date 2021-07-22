@@ -17,7 +17,7 @@ const Skills = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText,
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to='Home'
+                                <Button to='HireMe'
                                     smooth={true}
                                     duration={500}
                                     spy={true}

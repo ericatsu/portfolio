@@ -4,7 +4,6 @@ import { Nav, NavBarContainter, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks,
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 
-
 const NavBar = ( {toggle} ) => {
 
     const [scrollNav, setscrollNav] = useState(false)
@@ -48,8 +47,7 @@ const NavBar = ( {toggle} ) => {
             <NavItem>
                 <NavLinks to="Services" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}
-                containerId='services'>Service</NavLinks>
+                exact='true' offset={-80}>Services</NavLinks>
             </NavItem>
             <NavItem>
                 <NavLinks to="Works" smooth={true}
