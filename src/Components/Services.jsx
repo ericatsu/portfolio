@@ -24,16 +24,10 @@ const Services = () => {
                         solutions that satisfy your consumers while also helping your company expand.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon src={cloud} />
-                    <ServicesH2>Cloud Services</ServicesH2>
-                    <ServicesP>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
-                        voluptatibus.</ServicesP>
-                </ServicesCard>
-                <ServicesCard>
                     <ServicesIcon src={other} />
                     <ServicesH2>Others</ServicesH2>
-                    <ServicesP>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
-                        voluptatibus.</ServicesP>
+                    <ServicesP>We offer other services as well. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quo sint porro, eligendi animi sit voluptas magni obcaecati, distinctio id necessitatibus molestias velit non nesciunt omnis recusandae reprehenderit corrupti quaerat perferendis?</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

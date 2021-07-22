@@ -27,24 +27,24 @@ const Footer = () => {
                             <FooterLinkTitle>Support</FooterLinkTitle>
                             <FooterLink to="/HireMe">Support Request</FooterLink>
                             <FooterLink to="/HireMe">Contact</FooterLink>
-                            <FooterLink to="/HireMe">PayPal</FooterLink>
+                            <FooterLink to="https://paypal.me/eric380418?locale.x=en_US">PayPal</FooterLink>
                         </FooterLinkItems>
             </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Contact Me</FooterLinkTitle>
-                            <FooterLink to="/HireMe">WhatsApp</FooterLink>
-                            <FooterLink to="/HireMe">Telegram</FooterLink>
-                            <FooterLink to="/HireMe">Mail</FooterLink>
+                            <FooterLink to="https://wa.me/0570448184">WhatsApp</FooterLink>
+                            <FooterLink to="https://t.me/les_ter">Telegram</FooterLink>
+                            <FooterLink to="/">Mail</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Social Media</FooterLinkTitle>
-                            <FooterLink to="/HireMe">LinkedIn</FooterLink>
-                            <FooterLink to="/HireMe">GitHub</FooterLink>
-                            <FooterLink to="/HireMe">Twitter</FooterLink>
-                            <FooterLink to="/HireMe">YouTube</FooterLink>
-                            <FooterLink to="/HireMe">Instagram</FooterLink>
-                            <FooterLink to="/HireMe">Twitch</FooterLink>
+                            <FooterLink to="https://www.linkedin.com/in/eric-atsu-4065681b4/">LinkedIn</FooterLink>
+                            <FooterLink to="https://github.com/ericatsu">GitHub</FooterLink>
+                            <FooterLink to="//www.twitter.com/1LeS_Ter">Twitter</FooterLink>
+                            <FooterLink to="//www.youtube.com/channel/UCZvhEk5BETiadTJY4CdxIIQ">YouTube</FooterLink>
+                            <FooterLink to="https://www.instagram.com/1les_ter/">Instagram</FooterLink>
+                            <FooterLink to="/">Twitch</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -54,6 +54,7 @@ const Footer = () => {
                     lester
                 </SocialLogo>
                 <WebsiteRights>lester © {new Date().getFullYear()}
+                
                   All Rights Reserved.</WebsiteRights>
                 <SocialIcons>
                         <SocialIconLink href='//www.linkedin.com/in/eric-atsu-4065681b4/' target="_blank" aria-label="LinkedIn">

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
-import { Nav, NavBarContainter, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from '../elements/NavBarElements';
+import { Nav, NavBarContainter, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavResume} from '../elements/NavBarElements';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -55,13 +55,13 @@ const NavBar = ( {toggle} ) => {
                 exact='true' offset={-80}>Works</NavLinks>
             </NavItem>
             <NavItem>
-                <NavLinks to="Contact" smooth={true}
+                <NavResume to="Resume" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>Contact</NavLinks>
+                exact='true' offset={-80}>Resume</NavResume>
             </NavItem>
         </NavMenu>
          <NavBtn>
-             <NavBtnLink to='HireMe'>Hire Me</NavBtnLink>
+             <NavBtnLink to='HireMe'>Contact</NavBtnLink>
          </NavBtn>
         </NavBarContainter>
      </Nav>

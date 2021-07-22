@@ -20,9 +20,9 @@ const Hero = () => {
             <HeroContent>
                 <HeroH1>Welcome to my Page</HeroH1>
                 <HeroP>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Consequatur quas similique, doloribus architecto voluptates at 
-                    sapiente accusantium eius doloremque sit officiis. Dolorem perspiciatis, 
+                   Hello, I'm Eric Atsu, a Software Developer 
+                   currently working remote. Lorem ipsum dolor, 
+                   sit amet consectetur adipisicing elit. Optio, in!
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to='HireMe' onMouseEnter={onHover} onMouseLeave={onHover}
@@ -30,7 +30,7 @@ const Hero = () => {
                         duration={500} spy={true}
                         exact='true' offset={-80}
                     >
-                        Hire Me {hover ? <ArrowForward/> : <ArrowRight/>}
+                        Contact {hover ? <ArrowForward/> : <ArrowRight/>}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
