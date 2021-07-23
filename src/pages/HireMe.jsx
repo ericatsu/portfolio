@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Form, FormButton, FormContent, 
-  FormH1, FormInput, FormLabel, FormWrap, Icon, Text, FormMessage } from '../elements/HireMeElements'
+  FormH1, FormInput, FormLabel, FormWrap, Icon, FormMessage } from '../elements/HireMeElements'
 import emailjs from 'emailjs-com'
 
 const HireMe = () => {

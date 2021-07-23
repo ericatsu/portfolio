@@ -4,7 +4,6 @@ import { ServicesContainer, ServicesH1, ServicesWrapper,
     ServicesP } from '../elements/ServicesElements'
 import webdev from '../assets/images/webdev.svg'
 import appdev from '../assets/images/appdev.svg'
-import cloud from '../assets/images/cloud.svg'
 import other from '../assets/images/other.svg'
 
 const Services = () => {
