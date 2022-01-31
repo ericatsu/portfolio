@@ -18,11 +18,10 @@ const Hero = () => {
              <VideoBg autoPlay loop muted  src={Video} type='video/mp4'/>
             </HeroBg>
             <HeroContent>
-                <HeroH1>Welcome to my Page</HeroH1>
+                <HeroH1>Focus on making anywhere tidy</HeroH1>
                 <HeroP>
-                   Hello, I'm Eric Atsu, a Software Developer 
-                   currently working remote. Lorem ipsum dolor, 
-                   sit amet consectetur adipisicing elit. Optio, in!
+                   Provide robust, reliable and affordable cleaning service
+                   with the best customer service in the country.
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to='HireMe' onMouseEnter={onHover} onMouseLeave={onHover}
@@ -30,7 +29,7 @@ const Hero = () => {
                         duration={500} spy={true}
                         exact='true' offset={-80}
                     >
-                        Contact {hover ? <ArrowForward/> : <ArrowRight/>}
+                        Book Now {hover ? <ArrowForward/> : <ArrowRight/>}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>

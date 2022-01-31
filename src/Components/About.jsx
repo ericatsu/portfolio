@@ -15,7 +15,7 @@ const About = ({lightBg, id, imgStart,topLine,lightText, headline,darkText,descr
                         <Heading lightText={lightText}>{headline}</Heading>
                         <Subtitle darkText={darkText}>{description}</Subtitle>
                         <BtnWrap>
-                            <Button to='HireMe'
+                            <Button to='HireMe' //A page for About Us
                             smooth={true}
                             duration={500}
                             spy={true}

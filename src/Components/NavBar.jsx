@@ -29,20 +29,25 @@ const NavBar = ( {toggle} ) => {
     <IconContext.Provider value={{color: '#ffff'}}>
      <Nav scrollNav={scrollNav}>
         <NavBarContainter>
-        <NavLogo to="/" onClick={toggleHome}>lester</NavLogo>
+        <NavLogo to="/" onClick={toggleHome}>CleanIt</NavLogo>
         <MobileIcon onClick={toggle}>
             <FaBars />
         </MobileIcon >
         <NavMenu>
             <NavItem>
+                <NavLinks to="/" smooth={true}
+                duration={500} spy={true}
+                exact='true' offset={-80}>Home</NavLinks>
+            </NavItem>
+            <NavItem>
                 <NavLinks to="About" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>About</NavLinks>
+                exact='true' offset={-80}>About Us</NavLinks>
             </NavItem>
             <NavItem>
                 <NavLinks to="Skills" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>Skills</NavLinks>
+                exact='true' offset={-80}>Company</NavLinks>
             </NavItem>
             <NavItem>
                 <NavLinks to="Services" smooth={true}
@@ -52,16 +57,21 @@ const NavBar = ( {toggle} ) => {
             <NavItem>
                 <NavLinks to="Works" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>Works</NavLinks>
+                exact='true' offset={-80}>Our Blog</NavLinks>
             </NavItem>
             <NavItem>
+                <NavLinks to="/" smooth={true}
+                duration={500} spy={true}
+                exact='true' offset={-80}>FAQs</NavLinks>
+            </NavItem>
+            {/* <NavItem>
                 <NavResume to="Resume" smooth={true}
                 duration={500} spy={true}
                 exact='true' offset={-80}>Resume</NavResume>
-            </NavItem>
+            </NavItem> */}
         </NavMenu>
-         <NavBtn>
-             <NavBtnLink to='HireMe'>Contact</NavBtnLink>
+        <NavBtn>
+             <NavBtnLink to='HireMe'>Contact Phone</NavBtnLink>
          </NavBtn>
         </NavBarContainter>
      </Nav>

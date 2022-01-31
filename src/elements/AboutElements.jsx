@@ -51,7 +51,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
   color: #01bf71;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -60,7 +60,7 @@ export const TopLine = styled.p`
 `
 
 export const Heading = styled.h1`
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
@@ -73,7 +73,7 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `
