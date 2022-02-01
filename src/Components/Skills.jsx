@@ -6,7 +6,7 @@ import {
 } from "../elements/AboutElements"
 import skills from "../assets/images/skills.svg"
 
-const Skills = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2 }) => {
+const Skills = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, point1,point2,point3, buttonLabel, img, alt, primary, dark, dark2 }) => {
     return (
         <InfoContainer lightBg={lightBg} id={id}>
             <InfoWrapper>
@@ -15,7 +15,9 @@ const Skills = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText,
                         <TextWrapper>
                             <TopLine>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
-                            <Subtitle darkText={darkText}>{description}</Subtitle>
+                            <Subtitle darkText={darkText}>{point1}</Subtitle>
+                            <Subtitle darkText={darkText}>{point2}</Subtitle>
+                            <Subtitle darkText={darkText}>{point3}</Subtitle>
                             <BtnWrap>
                                 <Button to='HireMe'
                                     smooth={true}
