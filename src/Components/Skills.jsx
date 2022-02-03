@@ -19,7 +19,7 @@ const Skills = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText,
                             <Subtitle darkText={darkText}>{point2}</Subtitle>
                             <Subtitle darkText={darkText}>{point3}</Subtitle>
                             <BtnWrap>
-                                <Button to='HireMe'
+                                <Button to='FormPopUp'
                                     smooth={true}
                                     duration={500}
                                     spy={true}

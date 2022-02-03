@@ -65,9 +65,9 @@ const NavBar = ( {toggle} ) => {
                 exact='true' offset={-80}>FAQs</NavLinks>
             </NavItem>
             {/* <NavItem>
-                <NavResume to="Resume" smooth={true}
+                <NavResume to="LearnMore" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>Resume</NavResume>
+                exact='true' offset={-80}>Learn</NavResume>
             </NavItem> */}
         </NavMenu>
         <NavBtn>

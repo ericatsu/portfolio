@@ -25,7 +25,7 @@ export const homeObjTwo = {
     point1: 'Lorem ipsum dolor',
     point2: 'Lorem ipsum dolor',
     point3: 'Lorem ipsum dolor',
-    buttonLabel: 'Hire Me',
+    buttonLabel: 'Book Now',
     imgStart: true,
     img: require('../assets/images/hello.svg'),
     alt: 'hello',
