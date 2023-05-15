@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
-import { Nav, NavBarContainter, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavResume} from '../elements/NavBarElements';
+import { Nav, NavBarContainter, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavBarElements';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -29,49 +29,40 @@ const NavBar = ( {toggle} ) => {
     <IconContext.Provider value={{color: '#ffff'}}>
      <Nav scrollNav={scrollNav}>
         <NavBarContainter>
-        <NavLogo to="/" onClick={toggleHome}>CleanIt</NavLogo>
+        <NavLogo to='/' onClick={toggleHome}>lester</NavLogo>
         <MobileIcon onClick={toggle}>
             <FaBars />
         </MobileIcon >
         <NavMenu>
             <NavItem>
-                <NavLinks to="/" smooth={true}
-                duration={500} spy={true}
-                exact='true' offset={-80}>Home</NavLinks>
-            </NavItem>
-            <NavItem>
                 <NavLinks to="About" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>About Us</NavLinks>
+                exact='true' offset={-80}>About</NavLinks>
             </NavItem>
             <NavItem>
                 <NavLinks to="Skills" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>Company</NavLinks>
+                exact='true' offset={-80}>Skills</NavLinks>
             </NavItem>
             <NavItem>
                 <NavLinks to="Services" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>Services</NavLinks>
+                exact='true' offset={-80}
+                containerId='services'>Service</NavLinks>
             </NavItem>
             <NavItem>
                 <NavLinks to="Works" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>Our Blog</NavLinks>
+                exact='true' offset={-80}>Works</NavLinks>
             </NavItem>
             <NavItem>
-                <NavLinks to="/" smooth={true}
+                <NavLinks to="Contact" smooth={true}
                 duration={500} spy={true}
-                exact='true' offset={-80}>FAQs</NavLinks>
+                exact='true' offset={-80}>Contact</NavLinks>
             </NavItem>
-            {/* <NavItem>
-                <NavResume to="LearnMore" smooth={true}
-                duration={500} spy={true}
-                exact='true' offset={-80}>Learn</NavResume>
-            </NavItem> */}
         </NavMenu>
-        <NavBtn>
-             <NavBtnLink to='HireMe'>Contact Phone</NavBtnLink>
+         <NavBtn>
+             <NavBtnLink to='/HireMe'>Hire Me</NavBtnLink>
          </NavBtn>
         </NavBarContainter>
      </Nav>

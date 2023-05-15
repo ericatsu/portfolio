@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import { HeroContainer, HeroBg, VideoBg,
         HeroContent, HeroBtnWrapper,HeroH1,
-        HeroP, ArrowForward, ArrowRight } from '../elements/HeroElements'
+        HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import Video from '../assets/video.mp4'
-import { Button } from '../elements/ButtonElements'
+import { Button } from '../../elements/ButtonElements'
 
 const Hero = () => {
     const [hover, sethover] = useState(false)
