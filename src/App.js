@@ -1,34 +1,35 @@
 import { useState } from 'react';
-import SideBar from './Components/Sidebar/SideBar'
-import NavBar from './Components/Navbar/NavBar'
-import Hero from './Components/Footer/Footer';
+import Header from './Components/Header';
 import About from './Components/About';
+import Hero from './Components/Hero';
 import Skills from './Components/Skills';
-import Works from './Components/Works';
-import Services from './Components/Services/Services';
-import Footer from './Components/Footer/Footer';
-import { homeObjOne, homeObjTwo, homeObjThree } from './Components/Data';
-import { BrowserRouter as Router } from 'react-router-dom';
-
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
+import HireMe from './Components/HireMe';
 
 function App() {
-   const [isOpen, setIsOpen] = useState(false)
+  const [isHireMeOpen, setIsHireMeOpen] = useState(false);
 
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
+  const openHireMeDialog = () => {
+    setIsHireMeOpen(true);
+  };
+
+  const closeHireMeDialog = () => {
+    setIsHireMeOpen(false);
+  };
 
   return (
-    <Router>
-      <SideBar isOpen={isOpen} toggle={toggle} />
-      <NavBar toggle={toggle} />
+    <div>
+      <Header openHireMeDialog={openHireMeDialog} />
       <Hero />
-      <About {...homeObjOne} />
-      <Skills {...homeObjTwo} />
-      <Services />
-      <Works {...homeObjThree} />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer />
-    </Router>
+      {isHireMeOpen && <HireMe closeHireMeDialog={closeHireMeDialog} />}
+    </div>
   );
 }
 
