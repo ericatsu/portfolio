@@ -1,6 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import { CloseIcon, HeaderWrapper, HireMeButton, Logo, MenuIcon, MobileMenu, MobileMenuButton, MobileMenuItem, NavItem, NavMenu } from '../elements/HeaderElements';
+import { CallButton, CloseIcon, HeaderWrapper, HireMeButton, Logo, MenuIcon, MobileMenu, MobileMenuButton, MobileMenuItem, NavItem, NavMenu, PhoneIcon } from '../elements/HeaderElements';
 
 
 const Header = ({ openHireMeDialog }) => {
@@ -66,6 +66,10 @@ const Header = ({ openHireMeDialog }) => {
     </NavItem>
   </NavMenu>
   <HireMeButton onClick={openHireMeDialog}>  Hire Me</HireMeButton>
+  <CallButton>
+        <PhoneIcon />
+        Call
+      </CallButton>
   <MobileMenuButton onClick={toggleMobileMenu}>
     {isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
   </MobileMenuButton>

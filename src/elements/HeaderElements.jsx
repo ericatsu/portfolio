@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine, RiPhoneLine } from 'react-icons/ri';
 
 export const HeaderWrapper = styled.header`
   position: fixed;
@@ -58,6 +58,20 @@ export const HireMeButton = styled.button`
   &:hover {
     background-color: #ff4f4f;
   }
+`;
+
+export const CallButton = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  outline: none;
+`;
+
+export const PhoneIcon = styled(RiPhoneLine)`
+  font-size: 18px;
+  margin-right: 8px;
 `;
 
 export const MobileMenuButton = styled.button`
