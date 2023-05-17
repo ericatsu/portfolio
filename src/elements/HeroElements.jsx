@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { RiArrowRightSLine, RiPhoneLine } from 'react-icons/ri';
+import { RiPhoneLine } from 'react-icons/ri';
 
 export const HeroWrapper = styled.section`
   display: flex;
