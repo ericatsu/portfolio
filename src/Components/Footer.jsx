@@ -42,7 +42,7 @@ const Footer = () => {
           <FaInstagram />
         </SocialIcon>
       </SocialIconsContainer>
-      <PoweredBy>Powered by Eric Atsu</PoweredBy>
+      <PoweredBy>Powered by Eric😎Atsu🔥</PoweredBy>
     </FooterContainer>
   );
 };
