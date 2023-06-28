@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaInstagram, FaDiscord, FaGithub } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
   background-color: #333333;
@@ -40,6 +40,12 @@ const Footer = () => {
         </SocialIcon>
         <SocialIcon href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
+        </SocialIcon>
+        <SocialIcon href="https://www.discord.com/" target="_blank" rel="noopener noreferrer">
+          <FaDiscord />
+        </SocialIcon>
+        <SocialIcon href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
+          <FaGithub />
         </SocialIcon>
       </SocialIconsContainer>
       <PoweredBy>Powered by Eric😎Atsu🔥</PoweredBy>
