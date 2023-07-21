@@ -1,7 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import { CallButton, CloseIcon, HeaderWrapper, HireMeButton, Logo, MenuIcon, MobileMenu, MobileMenuButton, MobileMenuItem, NavItem, NavMenu, PhoneIcon } from '../elements/HeaderElements';
-
+import {  CloseIcon, HeaderContainer, HeaderWrapper, HireMeButton, Logo, MenuIcon, MobileMenu, MobileMenuButton, MobileMenuItem, NavItem, NavMenu} from '../elements/HeaderElements';
 
 const Header = ({ openHireMeDialog }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -16,17 +15,20 @@ const Header = ({ openHireMeDialog }) => {
 
   return (
     <HeaderWrapper>
-      <Logo onClick={() => scroll.scrollToTop()} 
-      to="top"
-     spy={true}
-     smooth={true}
-  duration={500}
-  offset={-60}>
+      <HeaderContainer>
+      <Logo
+        onClick={() => scroll.scrollToTop()}
+        to="top"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-60}
+      >
         EA
       </Logo>
       <NavMenu>
-        <NavItem
-                to="about"
+      <NavItem
+                to="About"
       spy={true}
       smooth={true}
       duration={500}
@@ -37,7 +39,7 @@ const Header = ({ openHireMeDialog }) => {
       About
     </NavItem>
     <NavItem
-      to="skills"
+      to="Skills"
       spy={true}
       smooth={true}
       duration={500}
@@ -48,7 +50,7 @@ const Header = ({ openHireMeDialog }) => {
       Skills
     </NavItem>
     <NavItem
-      to="projects"
+      to="Projects"
       spy={true}
       smooth={true}
       duration={500}
@@ -59,7 +61,7 @@ const Header = ({ openHireMeDialog }) => {
       Projects
     </NavItem>
     <NavItem
-      to="contact"
+      to="Contact"
       spy={true}
       smooth={true}
       duration={500}
@@ -69,67 +71,63 @@ const Header = ({ openHireMeDialog }) => {
     >
       Contact
     </NavItem>
-  </NavMenu>
-  <HireMeButton onClick={openHireMeDialog}>  Hire Me</HireMeButton>
-  <CallButton>
-        <PhoneIcon />
-        Call
-      </CallButton>
-  <MobileMenuButton onClick={toggleMobileMenu}>
-    {isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
-  </MobileMenuButton>
-  {isMobileMenuOpen && (
-    <MobileMenu>
-      <MobileMenuItem
-        to="about"
-        spy={true}
-        smooth={true}
-        duration={500}
-        offset={-60}
-        activeClass="active"
-        onClick={closeMobileMenu}
-      >
-        About
-      </MobileMenuItem>
-      <MobileMenuItem
-        to="skills"
-        spy={true}
-        smooth={true}
-        duration={500}
-        offset={-60}
-        activeClass="active"
-        onClick={closeMobileMenu}
-      >
-        Skills
-      </MobileMenuItem>
-      <MobileMenuItem
-        to="projects"
-        spy={true}
-        smooth={true}
-        duration={500}
-        offset={-60}
-        activeClass="active"
-        onClick={closeMobileMenu}
-      >
-        Projects
-      </MobileMenuItem>
-      <MobileMenuItem
-        to="contact"
-        spy={true}
-        smooth={true}
-        duration={500}
-        offset={-60}
-        activeClass="active"
-        onClick={closeMobileMenu}
-      >
-        Contact
-      </MobileMenuItem>
-    </MobileMenu>
-  )}
-</HeaderWrapper>
-);
+      </NavMenu>
+      <HireMeButton onClick={openHireMeDialog}>Hire Me</HireMeButton>
+      <MobileMenuButton onClick={toggleMobileMenu}>
+        {isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
+      </MobileMenuButton>
+      {isMobileMenuOpen && (
+        <MobileMenu>
+          <MobileMenuItem
+            to="About"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-60}
+            activeClass="active"
+            onClick={closeMobileMenu}
+          >
+            About
+          </MobileMenuItem>
+          <MobileMenuItem
+            to="Skills"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-60}
+            activeClass="active"
+            onClick={closeMobileMenu}
+          >
+            Skills
+          </MobileMenuItem>
+          <MobileMenuItem
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-60}
+            activeClass="active"
+            onClick={closeMobileMenu}
+          >
+            Projects
+          </MobileMenuItem>
+          <MobileMenuItem
+            to="Contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-60}
+            activeClass="active"
+            onClick={closeMobileMenu}
+          >
+            Contact
+          </MobileMenuItem>
+          
+        </MobileMenu>
+      )}
+      </HeaderContainer>
+    </HeaderWrapper>
+  );
 };
 
 export default Header;
-
-

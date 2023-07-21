@@ -9,26 +9,35 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   height: 60px;
   background-color: #fff;
-  z-index: 999;
+  z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 10px;
+  justify-content: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
+export const HeaderContainer = styled.div`
+  display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    padding: 0 54px;
+    max-width: 1100px;
+`;
 
 export const Logo = styled(Link)`
   font-size: 28px;
   font-weight: bold;
   color: #333;
   cursor: pointer;
+  justify-self: flex-start;
+  align-items: center;
 `;
 
 export const NavMenu = styled.nav`
   display: flex;
   align-items: center;
-  padding-right: 20px;
+  padding-left: 400px;
 `;
 
 export const NavItem = styled(Link)`
@@ -54,11 +63,12 @@ export const HireMeButton = styled.button`
   background-color: #ff6b6b;
   color: #fff;
   border: none;
-  padding: 8px 16px;
-  font-size: 14px;
+  padding: 10px 20px;
+  font-size: 1.0rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 10px; 
 
   &:hover {
     background-color: #ff4f4f;
@@ -77,13 +87,19 @@ export const CallButton = styled.button`
   align-items: center;
   outline: none;
 
+  &:hover {
+    background-color: #ff4f4f4c;
+    border-radius: 10px;
+    padding: 10px 18px;
+  }
+  
   @media (max-width: 768px) {
     display: none;
   }
 `;
 
 export const PhoneIcon = styled(RiPhoneLine)`
-  font-size: 18px;
+  font-size: 20px;
   margin-right: 8px;
 `;
 
@@ -109,10 +125,10 @@ export const MenuIcon = styled(RiMenuLine)`
 
 export const MobileMenu = styled.div`
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  width: 70%;
   background-color: #fff;
   padding: 20px;
   display: flex;
@@ -120,6 +136,7 @@ export const MobileMenu = styled.div`
   align-items: flex-start;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 9999;
+  transform: translateX(30%); /* Translate to right to position it correctly */
 
   @media (min-width: 768px) {
     display: none;
