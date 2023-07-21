@@ -5,14 +5,14 @@ export const HeroWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
 `;
 
 export const ContentWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
   padding: 0 50px;
 
@@ -48,6 +48,8 @@ export const Description = styled.p`
 export const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
+  width: 40%;
+  justify-content: space-between;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -58,38 +60,50 @@ export const HireMeButton = styled.button`
   background-color: #ff6b6b;
   color: #fff;
   border: none;
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 10px 20px;
+  font-size: 1.0rem;
   font-weight: bold;
-  margin-right: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 10px; 
 
   &:hover {
     background-color: #ff4f4f;
   }
 
   @media (max-width: 768px) {
-    margin-bottom: 20px;
+    display: none;
   }
 `;
 
 export const CallButton = styled.button`
   background-color: transparent;
   border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: #ff4f4f4c;
+    border-radius: 10px;
+    padding: 6px 12px;
+  }
+  
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const PhoneIcon = styled(RiPhoneLine)`
-  font-size: 18px;
+  font-size: 2rem;
   margin-right: 8px;
 `;
 
 export const ImageWrapper = styled.div`
-  width: 35%;
+  width: 40%;
   text-align: center;
+  
 
   @media (max-width: 768px) {
     display: none;
@@ -97,9 +111,10 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
+   max-width: 100%;
+  max-height: 180vh; 
+  border: none;
+  border-radius: 10%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 

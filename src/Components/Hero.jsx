@@ -7,7 +7,7 @@ const Hero = () => {
     <HeroWrapper>
       <ContentWrapper>
         <TextWrapper>
-          <Name>Your Name</Name>
+          <Name>Eric Atsu</Name>
           <Description>
             I am a Web and Mobile developer passionate about creating amazing user experiences.
           </Description>
