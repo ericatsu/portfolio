@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import { FaLinkedin, FaTwitter, FaInstagram, FaDiscord, FaGithub } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
-  background-color: #333333;
-  color: #ffffff;
+  color: #2e2e2e;
   padding: 20px;
   text-align: center;
 `;
@@ -14,7 +13,7 @@ const SocialIconsContainer = styled.div`
 `;
 
 const SocialIcon = styled.a`
-  color: #ffffff;
+  color: #2e2e2e;
   font-size: 20px;
   margin: 0 10px;
   transition: color 0.3s;

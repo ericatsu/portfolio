@@ -16,7 +16,12 @@ const Header = ({ openHireMeDialog }) => {
 
   return (
     <HeaderWrapper>
-      <Logo onClick={() => scroll.scrollToTop()}>
+      <Logo onClick={() => scroll.scrollToTop()} 
+      to="top"
+     spy={true}
+     smooth={true}
+  duration={500}
+  offset={-60}>
         EA
       </Logo>
       <NavMenu>

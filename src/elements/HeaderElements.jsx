@@ -17,7 +17,8 @@ export const HeaderWrapper = styled.header`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
-export const Logo = styled.div`
+
+export const Logo = styled(Link)`
   font-size: 28px;
   font-weight: bold;
   color: #333;
@@ -43,6 +44,10 @@ export const NavItem = styled(Link)`
   &.active {
     color: #ff6b6b;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const HireMeButton = styled.button`
@@ -58,6 +63,10 @@ export const HireMeButton = styled.button`
   &:hover {
     background-color: #ff4f4f;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const CallButton = styled.button`
@@ -67,6 +76,10 @@ export const CallButton = styled.button`
   display: flex;
   align-items: center;
   outline: none;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const PhoneIcon = styled(RiPhoneLine)`
@@ -96,15 +109,17 @@ export const MenuIcon = styled(RiMenuLine)`
 
 export const MobileMenu = styled.div`
   position: fixed;
-  top: 60px;
+  top: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
   background-color: #fff;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 
   @media (min-width: 768px) {
     display: none;
@@ -112,7 +127,8 @@ export const MobileMenu = styled.div`
 `;
 
 export const MobileMenuItem = styled(Link)`
-  margin-bottom: 10px;
+   font-size: 1.2rem;
+  margin-bottom: 20px;
   color: #333;
   cursor: pointer;
   transition: color 0.3s ease;
