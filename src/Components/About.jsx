@@ -1,6 +1,4 @@
 import React from 'react';
-import { FiSmartphone } from 'react-icons/fi';
-import { RiGlobeFill, RiPencilFill } from 'react-icons/ri';
 import {
   AboutSection,
   LeftContainer,
@@ -11,11 +9,15 @@ import {
   Subtitle,
   CardsContainer,
   Card,
-  CardIcon,
   CardText,
   DiscoverMore,
   ArrowIcon,
+  Img,
+  ImgWrap,
 } from '../elements/AboutElements';
+import flutterDev from "../assets/images/flutter_dev.svg"
+import webDev from "../assets/images/webdev.svg"
+import cloud from "../assets/images/cloud.svg"
 
 const About = () => {
   return (
@@ -25,7 +27,6 @@ const About = () => {
         <Title>3+</Title>
         </NumberWrapper>
         <Subtitle>Years of Workings Experience</Subtitle>
-        
       </LeftContainer>
       <RightContainer>
         <Description>
@@ -33,27 +34,27 @@ const About = () => {
         </Description>
         <CardsContainer>
           <Card>
-            <CardIcon>
-              <FiSmartphone />
-            </CardIcon>
+          <ImgWrap>
+          <Img src={flutterDev} alt="{alt}"/>
+          </ImgWrap>
             <CardText>Mobile Development</CardText>
             <DiscoverMore>
               Discover More <ArrowIcon>&rarr;</ArrowIcon>
             </DiscoverMore>
           </Card>
           <Card>
-            <CardIcon>
-              <RiGlobeFill />
-            </CardIcon>
+          <ImgWrap>
+          <Img src={webDev} alt="{alt}"/>
+          </ImgWrap>
             <CardText>Web Development</CardText>
             <DiscoverMore>
               Discover More <ArrowIcon>&rarr;</ArrowIcon>
             </DiscoverMore>
           </Card>
           <Card>
-            <CardIcon>
-              <RiPencilFill />
-            </CardIcon>
+          <ImgWrap>
+          <Img src={cloud} alt="{alt}"/>
+          </ImgWrap>
             <CardText>Dev Ops</CardText>
             <DiscoverMore>
               Discover More <ArrowIcon>&rarr;</ArrowIcon>
