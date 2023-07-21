@@ -1,6 +1,6 @@
 import React from 'react'
 import { ButtonWrapper, CallButton, ContentWrapper, Description, HeroWrapper, HireMeButton, Image, ImageWrapper, Name, PhoneIcon, TextWrapper } from '../elements/HeroElements';
-import passport  from '../assets/images/passport.jpg';
+import mypic  from '../assets/images/mypic.png';
 
 const Hero = () => {
   return (
@@ -20,7 +20,7 @@ const Hero = () => {
           </ButtonWrapper>
         </TextWrapper>
         <ImageWrapper>
-          <Image src={passport} alt="Eric Atsu" />
+          <Image src={mypic} alt="Eric Atsu" />
         </ImageWrapper>
       </ContentWrapper>
     </HeroWrapper>

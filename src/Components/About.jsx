@@ -1,5 +1,6 @@
 import React from 'react';
-import { FiSmartphone, RiGlobeFill, RiPencilFill } from 'react-icons/all';
+import { FiSmartphone } from 'react-icons/fi';
+import { RiGlobeFill, RiPencilFill } from 'react-icons/ri';
 import {
   AboutSection,
   LeftContainer,
@@ -53,7 +54,7 @@ const About = () => {
             <CardIcon>
               <RiPencilFill />
             </CardIcon>
-            <CardText>UI/UX Design</CardText>
+            <CardText>Dev Ops</CardText>
             <DiscoverMore>
               Discover More <ArrowIcon>&rarr;</ArrowIcon>
             </DiscoverMore>
