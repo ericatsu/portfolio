@@ -59,3 +59,43 @@ export const ProjectLink = styled.a`
     text-decoration: underline;
   }
 `;
+
+
+export const Card = styled.div`
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+`;
+
+export const Avatar = styled.img`
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+`;
+
+export const RepoName = styled.a`
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+
+  &:hover {
+    color: #007bff;
+  }
+`;
+
+export const Language = styled.span`
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+`;
+
+export const Description = styled.p`
+  font-size: 14px;
+  color: #777;
+`;
