@@ -57,7 +57,7 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const HireMeButton = styled.button`
-  background-color: #ff6b6b;
+  background-color: #1e90ff;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -68,7 +68,7 @@ export const HireMeButton = styled.button`
   border-radius: 10px; 
 
   &:hover {
-    background-color: #ff4f4f;
+    background-color: #4fb9ffcf;
   }
 
   @media (max-width: 768px) {
@@ -85,7 +85,7 @@ export const CallButton = styled.button`
   outline: none;
 
   &:hover {
-    background-color: #ff4f4f4c;
+    background-color: #4fb9ffcf4c;
     border-radius: 10px;
     padding: 6px 12px;
   }

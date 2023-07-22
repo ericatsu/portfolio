@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Axios from 'axios';
 import {
   ContactSection,
   ContactContainer,
@@ -12,7 +13,7 @@ import {
   FormTextarea,
   FormButton,
 } from '../elements/ContactElements';
-import { FaPhone, FaEnvelope, FaLinkedin, FaTwitter, FaInstagram, FaDiscord } from 'react-icons/fa';
+import { FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
   const [title, setTitle] = useState('');
@@ -21,10 +22,21 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send the email with the title and message data
-    // Add your email sending logic here
+    // Make a POST request to the backend API endpoint
+    Axios.post('/send-email', {
+      title,
+      message,
+      email: 'ericatsu29@gmail.com', // Replace with the recipient's email address
+    })
+      .then((response) => {
+        console.log(response.data);
+        // Handle the success response if needed
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        // Handle the error if needed
+      });
 
-    // Reset the form fields
     setTitle('');
     setMessage('');
   };
@@ -36,27 +48,11 @@ const Contact = () => {
           <ContactTitle>Contact Information</ContactTitle>
           <ContactItem>
   <FaPhone />
-  Phone: <ContactLink href="tel:+123456789">+123456789</ContactLink>
+  Phone: <ContactLink href="tel:+233500889627">+233500889627</ContactLink>
 </ContactItem>
 <ContactItem>
   <FaEnvelope />
-  Email: <ContactLink href="mailto:example@example.com">example@example.com</ContactLink>
-</ContactItem>
-<ContactItem>
-  <FaLinkedin />
-  LinkedIn: <ContactLink href="https://linkedin.com/">linkedin.com</ContactLink>
-</ContactItem>
-<ContactItem>
-  <FaTwitter />
-  Twitter: <ContactLink href="https://twitter.com/">twitter.com</ContactLink>
-</ContactItem>
-<ContactItem>
-  <FaInstagram />
-  Instagram: <ContactLink href="https://instagram.com/">instagram.com</ContactLink>
-</ContactItem>
-<ContactItem>
-  <FaDiscord />
-  Discord: <ContactLink href="https://discord.com/">username#1234</ContactLink>
+  Email:  <ContactLink href="mailto:ericatsu29@gmail.com"> ericatsu29@gmail.com</ContactLink>
 </ContactItem>
         </ContactInfo>
         <ContactForm onSubmit={handleSubmit}>

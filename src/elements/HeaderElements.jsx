@@ -47,11 +47,11 @@ export const NavItem = styled(Link)`
   transition: color 0.3s ease;
 
   &:hover {
-    color: #ff6b6b;
+    color: #1e90ff;
   }
 
   &.active {
-    color: #ff6b6b;
+    color: #1e90ff;
   }
 
   @media (max-width: 768px) {
@@ -60,7 +60,7 @@ export const NavItem = styled(Link)`
 `;
 
 export const HireMeButton = styled.button`
-  background-color: #ff6b6b;
+  background-color: #1e90ff;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -71,7 +71,7 @@ export const HireMeButton = styled.button`
   border-radius: 10px; 
 
   &:hover {
-    background-color: #ff4f4f;
+    background-color: #4fb9ffcf;
   }
 
   @media (max-width: 768px) {
@@ -88,7 +88,7 @@ export const CallButton = styled.button`
   outline: none;
 
   &:hover {
-    background-color: #ff4f4f4c;
+    background-color: #0099ff;
     border-radius: 10px;
     padding: 10px 18px;
   }
@@ -151,10 +151,10 @@ export const MobileMenuItem = styled(Link)`
   transition: color 0.3s ease;
 
   &:hover {
-    color: #ff6b6b;
+    color: #1e90ff;
   }
 
   &.active {
-    color: #ff6b6b;
+    color: #1e90ff;
   }
 `;

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import { Avatar, Card, Description, Language, ProjectGrid, ProjectsContainer, ProjectsSection, RepoName, Title } from "../elements/ProjectsElements";
+import { Avatar, Card, Description, ErrorMessage, Language, ProjectGrid, ProjectsContainer, ProjectsSection, RepoName, Title } from "../elements/ProjectsElements";
+
 
 const Projects = () => {
   const [repos, setRepos] = useState([]);
+  const [errorMessage, setErrorMessage] = useState("");
   const accessToken = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
@@ -23,8 +25,11 @@ const Projects = () => {
         repositories.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
         const recentRepos = repositories.slice(0, 6);
         setRepos(recentRepos);
+        setErrorMessage("");
       } catch (error) {
         console.error("Error fetching repositories:", error);
+        setRepos([]); 
+        setErrorMessage("Failed to fetch repositories. Please try again later.");
       }
     };
 
@@ -35,6 +40,7 @@ const Projects = () => {
     <ProjectsSection>
       <ProjectsContainer>
       <Title>Projects</Title>
+      {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
       <ProjectGrid>
         {repos.map((repo) => (
           <Card key={repo.id}>

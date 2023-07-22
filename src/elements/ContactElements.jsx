@@ -6,7 +6,7 @@ export const ContactSection = styled.section`
 `;
 
 export const ContactContainer = styled.div`
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
@@ -20,7 +20,7 @@ export const ContactContainer = styled.div`
 
 
 export const ContactInfo = styled.div`
-  flex-basis: 50%;
+  flex-basis: 40%;
   display: flex;
   flex-direction: column;
 
@@ -59,7 +59,7 @@ export const ContactLink = styled.a`
 `;
 
 export const ContactForm = styled.form`
-  flex-basis: 50%;
+  flex-basis: 55%;
 
   @media (max-width: 768px) {
     flex-basis: 100%;

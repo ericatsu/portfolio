@@ -99,3 +99,10 @@ export const Description = styled.p`
   font-size: 14px;
   color: #777;
 `;
+
+export const ErrorMessage = styled.p`
+  font-size: 1.2rem;
+  color: red;
+  justify-content: center;
+  align-items: center;
+`;
