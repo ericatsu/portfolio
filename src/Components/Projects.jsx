@@ -6,7 +6,7 @@ import { Avatar, Card, Description, ErrorMessage, Language, ProjectGrid, Project
 const Projects = () => {
   const [repos, setRepos] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
-  const accessToken = process.env.REACT_APP_API_KEY;
+  const accessToken = "GitHub Access Token";
 
   useEffect(() => {
     
