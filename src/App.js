@@ -7,6 +7,7 @@ import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import HireMe from './Components/HireMe';
+import FloatingChat from './Components/FloatingChat';
 
 function App() {
   const [isHireMeOpen, setIsHireMeOpen] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       <Contact />
       <Footer />
       {isHireMeOpen && <HireMe closeHireMeDialog={closeHireMeDialog} />}
+      <FloatingChat />
     </div>
   );
 }
