@@ -6,7 +6,7 @@ import { Avatar, Card, Description, ErrorMessage, Language, ProjectGrid, Project
 const Projects = () => {
   const [repos, setRepos] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
-  const accessToken = "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";
+  const accessToken = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
     
