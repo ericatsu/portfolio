@@ -24,7 +24,7 @@ const Header = ({ openHireMeDialog }) => {
         duration={500}
         offset={-60}
       >
-        EA
+        EA Auto
       </Logo>
       <NavMenu>
       <NavItem
