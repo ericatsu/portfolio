@@ -21,7 +21,7 @@ const FloatingChat = () => {
     setMessages(newMessages);
 
     try {
-      const response = await Axios.post('/api/dialogflow', { text: inputText });
+      const response = await Axios.post('/api/chatbot', { text: inputText });
       const botResponse = response.data;
       const newBotMessage = { text: botResponse, type: 'bot' };
       setMessages([...newMessages, newBotMessage]);

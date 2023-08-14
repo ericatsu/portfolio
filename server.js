@@ -2,22 +2,20 @@ const dialogflow = require('@google-cloud/dialogflow');
 
 const sessionClient = new dialogflow.SessionsClient({
   credentials: {
-  "type": "service_account",
-  "project_id": "portfolio-chat-axfd",
-  "private_key_id": process.env.CLOUD_PRIVATE_KEY_ID,
-  "private_key": process.env.CLOUD_PRIVATE_KEY,
-  "client_email": "portfolio-service@portfolio-chat-axfd.iam.gserviceaccount.com",
-  "client_id": process.env.CLOUD_CLIENT_ID,
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/portfolio-service%40portfolio-chat-axfd.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+    "type": "service_account",
+    "project_id": "portfolio-chat-axfd",
+    "private_key_id": "19e4348f7f891870b496a68f5dc1fb59f546efa1",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCjHyOw0wMscIBl\nMsyjo6XjH1EK8cImuRRYyaRhtzMx2AOF0PpCtDAprwiOCJyGkKpQmiFBqyzooPJZ\nbDIJemfMj+vv+5q9ON/l8WjyBJ7ulrlJFMszAJJO7rK0uZdeuRzKb05uVb5sUu6e\nyV9uXPg956l2j3mnqb+b3OpIa881+Yg5SpjntkEr4ngmwn6t25fjjVUvpwmImYiw\nOD4gsn6rywtOWX/5j7fmCr6D6Qw4I4SnPo7X6wOviiwqWgcnRpcfiHmKe7osrh8U\n1F5sBJdXZXLl75Hxw8HHzx17WiLjEw/2DmKQ1ZBTHC0+lw+1M7T+wsdpK0JYi7aM\nbAxkw49XAgMBAAECggEAAJIH8XdbcNj6xw5da+1wTeN6yJ5guPraWOhpbb/eWYIu\ngydgYtlUdoPDXUJV55xht7pCQYOIjDdY9fovVpw84Zi0s+D1Ru82nlIN4/z0sbC3\n+Jx0RumnsJlWXb0QC/7YFqhpiJ7hDMcEYD31Ttbbe2EHYMXDIIMQFxwUwO5xxA8v\ncsWtMxFgmHSS4DDTpHU+ysxuCPTUuIC0RmeFRpgYGm5chXCk6/MSJ+6tbKtzt2g5\nTTCAVQTyxGhAoYNrSU0MONRpx0qz8d3C/8Si1vMhQQ9fVWpYUS4X4Yn9FF3Rfclk\n0SjxEjd2jp9CEUz73OOGhIFJ3ePqqRXdo/UFaD3RYQKBgQDObDCSPpEy3ivvuu6h\nxMn6FxBB9Mb8CRQY72IRNkLgYRvmm2ra982i2FX79YBHXhUa6/T/6Q1Rn21P3YXI\nwvQQ0AznG1i1utkxTx68fby6d+8UrjzJqZU1040VI4JxEM0Ymfp4QYXmfb1qMYN0\nUHpxd/C7g6A1IgFSu+1uLBk8sQKBgQDKTJtTtzmJxL15c8alJdFcwn34zXSsC+Rt\nmd4mFeQgS2I5VOr9tH03k20tTPKlBZXLxUGQE+wMjORbmNT5pxJfQAyC0h14/n9f\nn7tz4okIBXOxuR+ih36zW+FHNdY6ieWidQXyw7JQrnsisYZ6IHTf+fz94vEZs3b+\n+RXSH4juhwKBgHRjXB+ZV5Uu3+cTp2le4+M3DduigG+rTsGgd9LsnViWaHzmNKGy\nByhCgnjGO8YBrjS3xjRk2zWihqf5Z22DPsocBKpqKOKOr9e1nMb6vmcFKLCobW3n\nSFJJLcs1cl798iZk62zSxQTo8Nvnfw8eMWu5DOstlC9hNQ3JGF5+TtyBAoGAVsRG\ntsBWeGWe0tG6eKjgxEVTHHyatxQetHeTVYh8IPHUPjzS0WAxeL3NzOk9BVSA7DY9\nqZsx2iwv4a2KY02qTpo9A3s1UujtHsl27/xQw9T6y1ZYYDB3Qlx9IjrQGKl+iZBh\nrb8L4xkDDV1RDV6QYmRpg0dsG5biyfdxyX7nD08CgYBHkmXHjxE/VGUrj4OB3Hem\nGL7iUvT3rp8buaqkW3wIUSQda/Lw3A8KDpcP9lwPuv4ll8/jQhbjHhMna/KW7JNP\n3fN/9Pe3lnFbpevwwHG1V+jfeCD4jcS7cr+hpkmuJIPW1MwM9GjFs7VUeaCBei55\n0W/hdmnxF4W+PO8a1mspBA==\n-----END PRIVATE KEY-----\n",
+    "client_email": "portfolio-service@portfolio-chat-axfd.iam.gserviceaccount.com",
+    "client_id": "104775924099839904088",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/portfolio-service%40portfolio-chat-axfd.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
   },
 });
 
-// Now you can use the `sessionClient` to interact with Dialogflow.
-// For example, you can send a text query to Dialogflow and get a response.
 
 const sessionPath = sessionClient.projectAgentSessionPath(
   "portfolio-chat-axfd",
