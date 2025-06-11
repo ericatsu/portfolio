@@ -18,11 +18,11 @@ const HireMe = () => {
   }
     return (
         <>
-        <Container onSubmit={sendEmail}>
+        <Container>
          <FormWrap>
           <Icon to="/">lester</Icon>
           <FormContent>
-            <Form action="#">
+            <Form action="#" onSubmit={sendEmail}>
             <FormH1>Contact Me</FormH1>
             <FormLabel htmlFor='for'>Name</FormLabel>
             <FormInput type='text' name='name' required/>
